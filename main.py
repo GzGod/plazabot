@@ -158,7 +158,7 @@ async def claim_faucet(address, proxy=None):
 
 # 获取随机存款金额
 def get_random_deposit_amount():
-    min_amount = 0.009
+    min_amount = 0.001
     max_amount = 0.01
     random_eth_amount = random.uniform(min_amount, max_amount)
     return Web3.to_wei(random_eth_amount, 'ether')
